@@ -9,13 +9,17 @@ import {
 } from "antd";
 
 
-
+import BarGraph from "../components/chart/BarGraph";
+import RadialChart from "../components/chart/Radialchart";
+import Acitivitychart from "../components/chart/Acitivitychart";
+import HorizontalBar from "../components/chart/HorizontalBar";
+import Overview from "../components/chart/Overview";
 import Patient from "../assets/images/profile-2user.svg";
 import Group from "../assets/images/Group 92262 (1).svg";
 import Useradd from "../assets/images/user-add.svg";
 import Clock from "../assets/images/clock.svg";
 function Home() {
-  const { Title, Text } = Typography;
+  const { Title } = Typography;
 
  
   const count = [
@@ -86,7 +90,43 @@ function Home() {
           ))}
         </Row>
 
-        
+        <Row gutter={[24, 0]}>
+          {/* Left column for Echart and LineChart */}
+          <Col xs={24} sm={24} md={24} lg={7} xl={7} className="mb-24">
+            <Card bordered={false} className="criclebox">
+            <Overview/>
+
+              {/* Echart component */}
+            </Card>
+            <Card bordered={false} className="criclebox" style={{ marginTop: '12px' }}>
+              {/* LineChart component */}
+              <Acitivitychart />
+            </Card>
+          </Col>
+
+          {/* Right column for the two cards */}
+          <Col xs={24} sm={24} md={24} lg={17} xl={17} className="mb-24" >
+            {/* First card - shown twice */}
+            <div className="d-flex w-100">
+              <Card bordered={false} className="criclebox cardbody h-full" style={{ width: '50%',marginRight: '12px', paddingLeft:'12px', height:'500px' }}>
+              <BarGraph />
+              </Card>
+
+              {/* RadialChart */}
+              <Card bordered={false} className="criclebox cardbody h-full" style={{ width: '50%' , height:'500px' }}>
+              <RadialChart />
+               
+              </Card>
+            </div>
+
+
+            {/* Second card */}
+            <Card bordered={false} className="criclebox" style={{ marginTop: '12px', }}>
+            <HorizontalBar />
+              
+            </Card>
+          </Col>
+        </Row>
 
       </div>
     </>

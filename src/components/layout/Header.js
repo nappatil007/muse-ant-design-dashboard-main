@@ -13,8 +13,6 @@ import {
   Row,
   Col,
   Button,
-  List,
-  Avatar,
   Drawer,
   Typography,
 } from "antd";
@@ -46,7 +44,6 @@ function Header({
   const { Title, Text } = Typography;
 
   const [visible, setVisible] = useState(false);
-  const [sidenavType, setSidenavType] = useState("transparent");
 
   useEffect(() => window.scrollTo(0, 0));
 

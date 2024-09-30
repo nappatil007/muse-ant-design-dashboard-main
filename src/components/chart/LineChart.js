@@ -2,27 +2,20 @@
 
 import ReactApexChart from "react-apexcharts";
 import { Typography } from "antd";
-import { MinusOutlined } from "@ant-design/icons";
 import lineChart from "./configs/lineChart";
 
 function LineChart() {
-  const { Title, Paragraph } = Typography;
+  const { Title } = Typography;
 
   return (
     <>
       <div className="linechart">
         <div>
-          <Title level={5}>Active Users</Title>
-          <Paragraph className="lastweek">
-            than last week <span className="bnb2">+30%</span>
-          </Paragraph>
+          <Title level={5}>Source</Title>
+         
         </div>
-        <div className="sales">
-          <ul>
-            <li>{<MinusOutlined />} Traffic</li>
-            <li>{<MinusOutlined />} Sales</li>
-          </ul>
-        </div>
+        
+        
       </div>
 
       <ReactApexChart
