@@ -34,19 +34,9 @@ const BarGraphUI = {
       colors: ["transparent"],
     },
     grid: {
-      show: true,
-      borderColor: "#D9D9D9", // Color for dashed lines
-      strokeDashArray: 3, // Dashed effect
-      xaxis: {
-        lines: {
-          show: false, // Disable x-axis lines
-        },
-      },
-      yaxis: {
-        lines: {
-          show: true, // Enable y-axis lines
-        },
-      },
+      show: false,
+      borderColor: "#ccc",
+      strokeDashArray: 2,
     },
     xaxis: {
       categories: ["30", "35 - 37", "38 - 40", "41 - 42"],
