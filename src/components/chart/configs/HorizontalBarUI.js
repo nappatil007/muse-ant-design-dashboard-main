@@ -60,7 +60,7 @@ const HorizontalBarUI = {
         strokeDashArray: 2,
       },
       xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        categories: ["Day 8", "Day 7", "Day 6", "Day 5", "Day 4", "Day 3"],
         labels: {
           show: false,
         },
