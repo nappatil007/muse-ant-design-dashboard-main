@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import message from '../../assets/images/message.svg'
-import Notifications from '../../assets/images/Notifications.svg'
+import Notifications from '../../assets/images/Notifications.svg';
+import ProfileImg from '../../assets/images/team-3.jpg';
 import Logo1 from '../../assets/images/LOGO 5 1.svg'
 import Logo2 from '../../assets/images/LOGO 2 1.svg'
 import Logo3 from '../../assets/images/LOGO 3 1.svg'
@@ -58,7 +59,7 @@ function Header({
 
   return (
     <>
-      <Row gutter={[24, 0]} style={{borderBottom: '1px solid #EFEDF2', paddingBottom:'20px'}}>
+      <Row gutter={[24, 0]} style={{ borderBottom: '1px solid #EFEDF2', paddingBottom: '20px' }}>
         <Col span={24} md={6} className="align-middle">
           <div className="ant-page-header-heading">
             <span
@@ -70,9 +71,12 @@ function Header({
             </span>
           </div>
         </Col>
-        <Col span={24} md={18} className="header-control" style={{paddingRight: '0'}}>
-          <Button type="link" style={{paddingRight: '0'}} onClick={showDrawer}>
-          <img src={message} alt="" />
+        <Col span={24} md={18} className="header-control" style={{ paddingRight: '0' }}>
+          <Button type="link" style={{ paddingRight: '0', paddingLeft: '0',marginLeft: '7px',height: '45px',width: '45px' }} onClick={showDrawer}>
+            <img style={{ paddingRight: '0', paddingLeft: '0',height: '42px',width: '42px', borderRadius:'12px', border: '2px solid #FFF' }} src={ProfileImg} alt="" />
+          </Button>
+          <Button type="link" style={{ paddingRight: '0' }} onClick={showDrawer}>
+            <img src={message} alt="" />
           </Button>
           <Button
             type="link"
@@ -98,8 +102,8 @@ function Header({
               </div>
             </div>
           </Drawer>
-          <Button type="link" style={{paddingRight: '0'}} onClick={showDrawer}>
-          <img src={Notifications} alt="" />
+          <Button type="link" style={{ paddingRight: '0' }} onClick={showDrawer}>
+            <img src={Notifications} alt="" />
           </Button>
           <Button
             type="link"
@@ -132,11 +136,11 @@ function Header({
             marginLeft: '1rem'
           }}></div>
           <div className="d-flex gap-4">
-          <img src={Logo1} alt="" />
-          <img src={Logo2} alt="" />
-          <img src={Logo3} alt="" />
-          <img src={Logo4} alt="" />
-          <img src={Logo5} alt="" />
+            <img src={Logo1} alt="" />
+            <img src={Logo2} alt="" />
+            <img src={Logo3} alt="" />
+            <img src={Logo4} alt="" />
+            <img src={Logo5} alt="" />
           </div>
         </Col>
       </Row>

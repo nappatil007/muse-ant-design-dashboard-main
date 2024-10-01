@@ -30,9 +30,7 @@
     font-weight: 600;
     color: #4A5157;
   }
-  tbody tr:first-child{
-    /* border-top: 10px solid white; */
-  }
+ 
   tbody tr{
     border-bottom: 10px solid white;
     background-color: #FAFAFA;
@@ -113,7 +111,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f9fa;
     border-radius: 8px;
 }
 

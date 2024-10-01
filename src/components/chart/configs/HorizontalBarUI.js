@@ -70,6 +70,17 @@ const HorizontalBarUI = {
         },
       },
       yaxis: {
+        title: {
+          text: 'Days',
+          margin: 10,
+          offsetX: 10,
+          offsetY: -10,
+          style: {
+            fontSize:  '12px',
+            fontWeight:  '400',
+            color:  '#4A5157'
+          },
+        },
         labels: {
           show: true,
           align: "right",

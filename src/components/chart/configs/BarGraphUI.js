@@ -40,14 +40,13 @@ const BarGraphUI = {
     },
     xaxis: {
       title: {
-        text: 'SART AGE',
+        text: 'SART Age',
         margin: 10,
         offsetX: 0,
         offsetY: -10,
         style: {
           fontSize:  '12px',
           fontWeight:  '400',
-          fontFamily:  'Poppins',
           color:  '#4A5157'
         },
       },
