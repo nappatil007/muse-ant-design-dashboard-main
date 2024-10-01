@@ -55,20 +55,23 @@ const AcitivitychartUI = {
         },
       },
       yaxis: {
-        labels: {
-          show: true,
-          align: "right",
-          minWidth: 0,
-          maxWidth: 160,
-          style: {
-            colors: ["#4A5157", "#4A5157", "#4A5157", "#4A5157", "#4A5157", "#4A5157"],
-          },
-        },
-        axisBorder: {
-          show: true,
-          color: '#f2f2f3',
-        },
+        show: false, // Hide the Y-axis
       },
+      // yaxis: {
+      //   labels: {
+      //     show: true,
+      //     align: "right",
+      //     minWidth: 0,
+      //     maxWidth: 160,
+      //     style: {
+      //       colors: ["#4A5157", "#4A5157", "#4A5157", "#4A5157", "#4A5157", "#4A5157"],
+      //     },
+      //   },
+      //   axisBorder: {
+      //     show: true,
+      //     color: '#f2f2f3',
+      //   },
+      // },
   
       tooltip: {
         y: {

@@ -9,6 +9,8 @@ function Acitivitychart() {
   // Define initial state for the chart's series
   const [chartData, setChartData] = useState(AcitivitychartUI.series);
   const [activeButton, setActiveButton] = useState('patients'); // Track active button
+  const [dropdownVisible, setDropdownVisible] = useState(false); // Track dropdown visibility
+  // const [selectedTimeframe, setSelectedTimeframe] = useState('Week');
 
   // Event handler to update chart for "Total Patients"
   const handleTotalPatients = () => {
@@ -46,14 +48,31 @@ function Acitivitychart() {
     : {};
   };
 
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+    
+  };
+
+  // Handle selection from the dropdown
+  // const handleSelection = (timeframe) => {
+  //   setSelectedTimeframe(timeframe); // Update the selected timeframe (Day/Week)
+  //   setDropdownVisible(false); // Close the dropdown
+  // };
+
+
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <span className="activitytext">Activity</span>
         </div>
-        <div className="align-middle">
-          <span className="weektext p-1">Week   <img className='selectedIcon' src={SquareArrow} alt="SquareArrow" /> </span>
+        <div className="align-middle position-relative">
+          <span className="weektext p-1" onClick={toggleDropdown}>
+            Week
+            <img className="selectedIcon ms-2 mb-1" src={SquareArrow} alt="SquareArrow" />
+          </span>
+        
         </div>
       </div>
       <div className="stackedbtn">

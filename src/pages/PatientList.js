@@ -4,7 +4,6 @@ import ViewIcon from '../assets/images/eye.svg';
 import AddIcon from '../assets/images/AddIcon.svg';
 import FilterIcon from '../assets/images/FilterIcon.svg';
 import UploadIcon from '../assets/images/document-upload.svg';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const patients = [
@@ -117,7 +116,8 @@ const patients = [
     notes: 'Pending',
     result: 'N/A',
     status: 'Pending',
-  },
+  }
+  
 
   // Add more patients as per the image...
 ];
