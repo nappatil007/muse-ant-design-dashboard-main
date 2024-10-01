@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line no-unused-vars
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
@@ -7,6 +8,7 @@ import Main from "./components/layout/Main";
 import "antd/dist/antd.css";
 import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
+import PatientList from "./pages/PatientList";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
         <Route path="/sign-in" exact component={SignIn} />
         <Main>
           <Route exact path="/dashboard" component={Home} />
-          <Redirect from="*" to="/dashboard" />
+          <Route exact path="/patientList" component={PatientList} />
+          {/* <Redirect from="*" to="/dashboard" /> */}
         </Main>
       </Switch>
     </div>
