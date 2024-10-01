@@ -230,7 +230,7 @@ const PatientList = () => {
       <div className={styles.footer}>
         <div className={styles.totalContainer}>
           <span>Total :</span>
-          <span className={styles.totalNumber}>29</span>
+          <span className={styles.totalNumber}>{patients.length}</span>
         </div>
         <div className={styles.statusContainer}>
           <div className={styles.statusItem}>
