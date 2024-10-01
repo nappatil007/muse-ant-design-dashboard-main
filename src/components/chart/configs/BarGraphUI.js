@@ -22,7 +22,7 @@ const BarGraphUI = {
         horizontal: false,
         columnWidth: "30%",
         borderRadius: 10, 
-        borderRadiusApplication: "end", 
+        // borderRadiusApplication: "end", 
       },
     },
     dataLabels: {
@@ -39,6 +39,18 @@ const BarGraphUI = {
       strokeDashArray: 2,
     },
     xaxis: {
+      title: {
+        text: 'SART AGE',
+        margin: 10,
+        offsetX: 0,
+        offsetY: -10,
+        style: {
+          fontSize:  '12px',
+          fontWeight:  '400',
+          fontFamily:  'Poppins',
+          color:  '#4A5157'
+        },
+      },
       categories: ["30", "35 - 37", "38 - 40", "41 - 42"],
       labels: {
         show: true,
@@ -55,6 +67,17 @@ const BarGraphUI = {
       },
     },
     yaxis: {
+      title: {
+        text: 'Patients',
+        margin: 10,
+        offsetX: 0,
+        offsetY: -10,
+        style: {
+          fontSize:  '12px',
+          fontWeight:  '400',
+          color:  '#4A5157'
+        },
+      },
       min: 100, // Set minimum to 100k
       max: 1000, // Set maximum to 800k
       tickAmount: 5,
