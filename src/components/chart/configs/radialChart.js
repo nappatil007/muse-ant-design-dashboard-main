@@ -8,10 +8,11 @@ const radialChart = {
         plotOptions: {
             radialBar: {
                 hollow: {
-                    size: '40%',    // Adjust the inner radius (hollow center)
+                    size: '35%',    // Adjust the inner radius (hollow center)
+                    background:'#f0f0f0',
                 },
                 track: {
-                    background: '#fff', // Track background color
+                    background: '#fafafa', // Track background color
                     strokeWidth: '100%', // Width of the track (the path behind the bar)
                 },
                 dataLabels: {

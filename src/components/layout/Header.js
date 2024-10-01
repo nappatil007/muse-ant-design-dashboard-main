@@ -50,6 +50,12 @@ function Header({
   const showDrawer = () => setVisible(true);
   const hideDrawer = () => setVisible(false);
 
+  // Utility function to format subName
+  const formatSubName = (name) => {
+    // Remove "/" and insert space before each capital letter except the first one
+    return name.replace("/", "").replace(/([a-z])([A-Z])/g, '$1 $2');
+  };
+
   return (
     <>
       <Row gutter={[24, 0]} style={{borderBottom: '1px solid #EFEDF2', paddingBottom:'20px'}}>
@@ -59,7 +65,8 @@ function Header({
               className="ant-page-header-heading-title"
               style={{ textTransform: "capitalize" }}
             >
-              {subName.replace("/", "")}
+              {formatSubName(subName)}
+              {/* {subName.replace("/", "")} */}
             </span>
           </div>
         </Col>
