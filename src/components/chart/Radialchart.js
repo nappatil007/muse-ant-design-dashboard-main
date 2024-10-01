@@ -1,3 +1,4 @@
+import { useState } from 'react';
 
 import ReactApexChart from "react-apexcharts";
 import { Typography } from "antd";
@@ -28,6 +29,10 @@ function RadialChart() {
                 <div>
                     <Title level={5} className="header-name">Source</Title>
                 </div>
+                <div style={{ width: '100%' }}>
+
+                            <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+                 </div>
 
                 {/* <Tabs defaultActiveKey="1" items={items} onChange={onChange} /> */}
                 <div className="maindiv">

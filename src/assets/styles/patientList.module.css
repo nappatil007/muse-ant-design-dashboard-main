@@ -108,4 +108,68 @@
     text-align: center;
   }
   
-  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.totalContainer {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.totalNumber {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+}
+
+.statusItem {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.statusItem:last-child {
+    margin-right: 0;
+}
+
+.notStartedIcon,
+.pendingIcon,
+.completedIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.notStartedIcon {
+    background-color: #6c757d; /* Grey color for "Not Started" */
+}
+
+.pendingIcon {
+    background-color: #f4a261; /* Orange color for "Pending" */
+}
+
+.completedIcon {
+    background-color: #2a9d8f; /* Green color for "Completed" */
+}
+
+.footerIconLabel{
+    font-size: 14px;
+    font-weight: 500;
+    color: #272D36;
+}
