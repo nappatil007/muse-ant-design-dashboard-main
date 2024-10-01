@@ -29,7 +29,7 @@ function RadialChart() {
                     <Title level={5} className="header-name">Source</Title>
                 </div>
 
-                <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+                {/* <Tabs defaultActiveKey="1" items={items} onChange={onChange} /> */}
                 <div className="maindiv">
                     <div className="innerdiv">
                         <span className="spanmain" style={{backgroundColor:'rgb(55, 197, 119)'}}>
