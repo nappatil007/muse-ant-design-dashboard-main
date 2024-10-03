@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ReactApexChart from "react-apexcharts";
 import AcitivitychartUI from "./configs/AcitivitychartUI";
 import SquareArrow from '../../assets/images/arrow-square-down.svg';
+import iconForActivity from '../../assets/images/iconForActivity.svg';
 
 
 function Acitivitychart() {
@@ -77,10 +78,10 @@ function Acitivitychart() {
       </div>
       <div className="stackedbtn">
         <button className="stacked-button" style={getButtonStyle('patients')} onClick={handleTotalPatients}>
-          <span className="button-icon">Total Patients</span>
+          <img src={iconForActivity} alt=''></img> <span className="button-icon">Total Patients</span>
         </button>
         <button className="stacked-button" style={getButtonStyle('embryo')} onClick={handleTotalEmbryoGraded}>
-          <span className="button-icon">Total Embryo Graded</span>
+        <img src={iconForActivity} alt=''></img> <span className="button-icon">Total Embryo Graded</span>
         </button>
       </div>
       <div id="chart">
