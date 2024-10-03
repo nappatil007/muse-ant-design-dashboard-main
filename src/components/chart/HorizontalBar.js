@@ -107,7 +107,7 @@ function HorizontalBar() {
                     className="bar-chart"
                     options={HorizontalBarUI.options}
                     series={chartSeries} 
-                    height={330}
+                    height={320}
                     type="bar"
                 />
             </div>

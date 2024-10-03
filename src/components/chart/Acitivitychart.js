@@ -88,7 +88,7 @@ function Acitivitychart() {
           className="bar-chart"
           options={AcitivitychartUI.options}
           series={chartData}
-          height={392}
+          height={340}
           type="bar"
         />
       </div>

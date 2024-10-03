@@ -65,8 +65,9 @@ function Home() {
               xs={24}
               sm={24}
               md={12}
-              lg={6}
-              xl={6}
+              lg={12}
+              xl={12}
+              xxl={6}
               className="mb-24"
             >
               <Card bordered={false} className="criclebox ">
@@ -92,7 +93,7 @@ function Home() {
 
         <Row gutter={[24, 0]}>
           {/* Left column for Echart and LineChart */}
-          <Col xs={24} sm={24} md={24} lg={7} xl={7} className="mb-24">
+          <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={6} className="">
             <Card bordered={false} className="criclebox">
             <Overview/>
 
@@ -105,7 +106,7 @@ function Home() {
           </Col>
 
           {/* Right column for the two cards */}
-          <Col xs={24} sm={24} md={24} lg={17} xl={17} className="mb-24" >
+          <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={18} className="" >
             {/* First card - shown twice */}
             <div className="d-flex w-100">
               <Card bordered={false} className="criclebox cardbody h-full" style={{ width: '50%',marginRight: '12px', paddingLeft:'12px', height:'500px' }}>
