@@ -117,9 +117,9 @@ export default class SignIn extends Component {
       <>
         <Layout className="layout-default layout-signin">
           <Header>
-            <div className="header-col header-brand">
+            {/* <div className="header-col header-brand">
               <h5>Muse Dashboard</h5>
-            </div>
+            </div> */}
             <div className="header-col header-nav">
               <Menu mode="horizontal" defaultSelectedKeys={["1"]}>
                 <Menu.Item key="1">
@@ -128,12 +128,12 @@ export default class SignIn extends Component {
                     <span> Dashboard</span>
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="2">
+                {/* <Menu.Item key="2">
                   <Link to="/profile">
                     {profile}
                     <span>Profile</span>
                   </Link>
-                </Menu.Item>
+                </Menu.Item> */}
                 <Menu.Item key="3">
                   <Link to="/sign-up">
                     {signup}
@@ -148,9 +148,9 @@ export default class SignIn extends Component {
                 </Menu.Item>
               </Menu>
             </div>
-            <div className="header-col header-btn">
+            {/* <div className="header-col header-btn">
               <Button type="primary">FREE DOWNLOAD</Button>
-            </div>
+            </div> */}
           </Header>
           <Content className="signin">
             <Row gutter={[24, 0]} justify="space-around">
@@ -212,7 +212,10 @@ export default class SignIn extends Component {
                       htmlType="submit"
                       style={{ width: "100%" }}
                     >
-                      SIGN IN
+                      <Link to="/dashboard">
+                    <span> SIGN IN</span>
+                  </Link>
+                      {/* SIGN IN */}
                     </Button>
                   </Form.Item>
                   <p className="font-semibold text-muted">
@@ -223,7 +226,7 @@ export default class SignIn extends Component {
                   </p>
                 </Form>
               </Col>
-              <Col
+              {/* <Col
                 className="sign-img"
                 style={{ padding: 12 }}
                 xs={{ span: 24 }}
@@ -231,11 +234,11 @@ export default class SignIn extends Component {
                 md={{ span: 12 }}
               >
                 <img src={signinbg} alt="" />
-              </Col>
+              </Col> */}
             </Row>
           </Content>
           <Footer>
-            <Menu mode="horizontal">
+            {/* <Menu mode="horizontal">
               <Menu.Item>Company</Menu.Item>
               <Menu.Item>About Us</Menu.Item>
               <Menu.Item>Teams</Menu.Item>
@@ -272,7 +275,7 @@ export default class SignIn extends Component {
             <p className="copyright">
               {" "}
               Copyright © 2021 Muse by <a href="#pablo">Creative Tim</a>.{" "}
-            </p>
+            </p> */}
           </Footer>
         </Layout>
       </>

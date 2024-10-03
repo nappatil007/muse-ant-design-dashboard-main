@@ -1827,7 +1827,8 @@ body {
   background-size: cover;
   background-position: 50%;
   text-align: center;
-  background: url("../images/bg-signup.jpg") no-repeat center top;
+  background: grey;
+  /* background: url("../images/bg-signup.jpg") no-repeat center top; */
 }
 .header-col.header-brand {
   white-space: nowrap;

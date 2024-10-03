@@ -128,12 +128,12 @@ export default class SignUp extends Component {
                     <span> Dashboard</span>
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="2">
+                {/* <Menu.Item key="2">
                   <Link to="/profile">
                     {profile}
                     <span>Profile</span>
                   </Link>
-                </Menu.Item>
+                </Menu.Item> */}
                 <Menu.Item key="3">
                   <Link to="/sign-up">
                     {signup}
@@ -148,9 +148,9 @@ export default class SignUp extends Component {
                 </Menu.Item>
               </Menu>
             </div>
-            <div className="header-col header-btn">
+            {/* <div className="header-col header-btn">
               <Button type="false">FREE DOWNLOAD</Button>
-            </div>
+            </div> */}
           </Header>
 
           <Content className="p-0">
@@ -240,7 +240,7 @@ export default class SignUp extends Component {
               </p>
             </Card>
           </Content>
-          <Footer>
+          {/* <Footer>
             <Menu mode="horizontal">
               <Menu.Item>Company</Menu.Item>
               <Menu.Item>About Us</Menu.Item>
@@ -279,7 +279,7 @@ export default class SignUp extends Component {
               {" "}
               Copyright © 2021 Muse by <a href="#pablo">Creative Tim</a>.{" "}
             </p>
-          </Footer>
+          </Footer> */}
         </div>
       </>
     );
