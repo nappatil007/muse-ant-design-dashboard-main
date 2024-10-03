@@ -19,9 +19,9 @@ function RadialChart() {
     };
 
     const items = [
-        { key: '1', label: 'Tab 1' },
-        { key: '2', label: 'Tab 2' },
-        { key: '3', label: 'Tab 3' },
+        { key: '1', label: 'Egg' },
+        { key: '2', label: 'Sperm' },
+        { key: '3', label: 'Both' },
     ];
 
     return (
