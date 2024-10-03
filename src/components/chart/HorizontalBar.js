@@ -68,9 +68,9 @@ function HorizontalBar() {
                 <div className="chart-container">
                     <div style={{display:'flex'}} className={`align-middle align-items-center`}>
                         <div style={{ width: '30%' }}>
-                            <Title level={5} className="EmbryoGradingCss">Embryo Grading</Title>
+                            <Title level={5} className="EmbryoGradingCss mb-0">Embryo Grading</Title>
                         </div>
-                        <div style={{ width: '70%' }}>
+                        <div style={{ width: '100%' }}>
 
                             <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
                         </div>

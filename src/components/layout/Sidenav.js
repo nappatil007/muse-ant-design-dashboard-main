@@ -242,11 +242,11 @@ function Sidenav({ color }) {
       <div>
         <Menu theme="light" mode="inline">
           <Menu.Item key="1">
-            <NavLink to="/Logout">
+            <NavLink to="/sign-in">
               <span
                 className="icon"
                 style={{
-                  background: page === "Logout" ? color : "",
+                  background: page === "sign-in" ? color : "",
                 }}
               >
                 {dashboard}
