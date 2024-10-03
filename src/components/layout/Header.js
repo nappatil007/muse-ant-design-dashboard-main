@@ -136,11 +136,11 @@ function Header({
             marginLeft: '1rem'
           }}></div>
           <div className="d-flex gap-4">
-            <img src={Logo1} alt="" />
-            <img src={Logo2} alt="" />
-            <img src={Logo3} alt="" />
-            <img src={Logo4} alt="" />
             <img src={Logo5} alt="" />
+            <img src={Logo4} alt="" />
+            <img src={Logo3} alt="" />
+            <img src={Logo2} alt="" />
+            <img src={Logo1} alt="" />
           </div>
         </Col>
       </Row>
