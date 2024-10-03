@@ -2,10 +2,10 @@
 
 import ReactApexChart from "react-apexcharts";
 import BarGraphUI from "./configs/BarGraphUI";
-import { Typography } from "antd";
+// import { Typography } from "antd";
 
 function BarGraph() {
-  const { Title } = Typography;
+  // const { Title } = Typography;
  
 
   return (

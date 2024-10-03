@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Typography } from "antd";
+// import { Typography } from "antd";
 import { Tabs } from 'antd';
 function Overview() {
-    const { Title } = Typography;
+    // const { Title } = Typography;
     const [data, setData] = useState({
         width1: 40,
         width2: 60,
