@@ -42,13 +42,14 @@ const HorizontalBarUI = {
           horizontal: true,
           columnWidth: "30%",
           borderRadius: 10,
-          borderRadiusApplication: "end",
+          borderRadiusApplication: "around",
+          borderRadiusWhenStacked: 'all',
           barHeight: "70%",
         },
       },
       stroke: {
         show: true,
-        width: 2,
+        width: 4,
         colors: ["#fff"],
       },
       dataLabels: {
