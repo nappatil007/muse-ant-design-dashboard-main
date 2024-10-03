@@ -61,12 +61,12 @@ function Overview() {
         <>
             <div className="chart-container">
                 <div>
-                    <Title level={5} className="header-name">Source</Title>
+                <h5 class="ant-typography">Overview</h5>
                 </div>
 
                 <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
 
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div className='mt-4' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div style={{ width: '95%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div style={{
                             width: `${data.width1}%`,

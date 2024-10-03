@@ -12,7 +12,7 @@ function BarGraph() {
     <>
       <div id="chart">
       <div>
-                    <Title level={5} className="header-name">Age Distribution</Title>
+      <h5 class="ant-typography mb-0">Age Distribution</h5>
                 </div>
         <ReactApexChart
           className="bar-chart"
