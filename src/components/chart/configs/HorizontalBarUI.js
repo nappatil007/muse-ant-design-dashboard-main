@@ -44,7 +44,7 @@ const HorizontalBarUI = {
           borderRadius: 10,
           borderRadiusApplication: "around",
           borderRadiusWhenStacked: 'all',
-          barHeight: "70%",
+          barHeight: "90%",
         },
       },
       stroke: {
