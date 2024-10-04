@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import message from '../../assets/images/message.svg'
 import Notifications from '../../assets/images/Notifications.svg';
@@ -8,7 +6,9 @@ import Logo1 from '../../assets/images/LOGO 5 1.svg'
 import Logo2 from '../../assets/images/LOGO 2 1.svg'
 import Logo3 from '../../assets/images/LOGO 3 1.svg'
 import Logo4 from '../../assets/images/LOGO 4 1.svg'
-import Logo5 from '../../assets/images/LOGO 6 1.svg'
+import Logo5 from '../../assets/images/LOGO 6 1.svg';
+import { Dropdown, Space } from 'antd';
+
 
 import {
   Row,
@@ -29,6 +29,17 @@ const toggler = [
   >
     <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
   </svg>,
+];
+
+const items = [
+  {
+    key: '1',
+    label: (
+      <a target="_blank" rel="noopener noreferrer" href="/">
+        Logout
+      </a>
+    ),
+  },
 ];
 
 
@@ -60,7 +71,7 @@ function Header({
   return (
     <>
       <Row gutter={[24, 0]} style={{ borderBottom: '1px solid #EFEDF2', paddingBottom: '20px' }}>
-        <Col span={24} md={6} className="align-middle">
+        <Col span={24} md={6} className="align-middle align-content-center">
           <div className="ant-page-header-heading">
             <span
               className="ant-page-header-heading-title"
@@ -72,9 +83,18 @@ function Header({
           </div>
         </Col>
         <Col span={24} md={18} className="header-control" style={{ paddingRight: '0' }}>
-          <Button type="link" style={{ paddingRight: '0', paddingLeft: '0',marginLeft: '7px',height: '45px',width: '45px' }} onClick={showDrawer}>
+        <Space direction="vertical">
+            <Space wrap>
+              <Dropdown menu={{ items }} placement="bottomLeft">
+                <Button style={{ paddingRight: '0', paddingLeft: '0', marginLeft: '7px', height: '45px', width: '45px', border: 'none', borderRadius: '12px' }} >
+                  <img style={{ paddingRight: '0', paddingLeft: '0', height: '42px', width: '42px', borderRadius: '12px', border: '2px solid #FFF' }} src={ProfileImg} alt="" />
+                </Button>
+              </Dropdown>
+            </Space>
+          </Space>
+          {/* <Button type="link" style={{ paddingRight: '0', paddingLeft: '0',marginLeft: '7px',height: '45px',width: '45px' }} onClick={showDrawer}>
             <img style={{ paddingRight: '0', paddingLeft: '0',height: '42px',width: '42px', borderRadius:'12px', border: '2px solid #FFF' }} src={ProfileImg} alt="" />
-          </Button>
+          </Button> */}
           <Button type="link" style={{ paddingRight: '0' }} onClick={showDrawer}>
             <img src={message} alt="" />
           </Button>
